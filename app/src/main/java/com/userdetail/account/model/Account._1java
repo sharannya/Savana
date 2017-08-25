@@ -1,0 +1,76 @@
+
+package com.userdetail.account.model;
+
+import java.util.List;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class Account {
+
+    @SerializedName("accounts")
+    @Expose
+    private List<Account_> accounts = null;
+    @SerializedName("failedAccountTypes")
+    @Expose
+    private String failedAccountTypes;
+    @SerializedName("returnCode")
+    @Expose
+    private String returnCode;
+
+    public List<Account_> getAccounts() {
+        return accounts;
+    }
+
+    public void setAccounts(List<Account_> accounts) {
+        this.accounts = accounts;
+    }
+
+    public String getFailedAccountTypes() {
+        return failedAccountTypes;
+    }
+
+    public void setFailedAccountTypes(String failedAccountTypes) {
+        this.failedAccountTypes = failedAccountTypes;
+    }
+
+    public String getReturnCode() {
+        return returnCode;
+    }
+
+    public void setReturnCode(String returnCode) {
+        this.returnCode = returnCode;
+    }@SerializedName("accounts")
+         @Expose
+         private List<Account_> accounts = null;
+         @SerializedName("failedAccountTypes")
+         @Expose
+         private String failedAccountTypes;
+         @SerializedName("returnCode")
+         @Expose
+         private String returnCode;
+
+         public List<Account_> getAccounts() {
+             return accounts;
+         }
+
+         public void setAccounts(List<Account_> accounts) {
+             this.accounts = accounts;
+         }
+
+         public String getFailedAccountTypes() {
+             return failedAccountTypes;
+         }
+
+         public void setFailedAccountTypes(String failedAccountTypes) {
+             this.failedAccountTypes = failedAccountTypes;
+         }
+
+         public String getReturnCode() {
+             return returnCode;
+         }
+
+         public void setReturnCode(String returnCode) {
+             this.returnCode = returnCode;
+         }
+
+}
